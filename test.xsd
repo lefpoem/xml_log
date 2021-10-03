@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="person">
+        <xs:complexType>
+            <xs:sequence> <!-- sequece意味着被定义元素只能按次序排列-->
+                <xs:element name="firstname" type="xs:string"/>
+                <xs:element name="lastname" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3school.com.cn"
+xmlns="http://www.w3chool.com.cn" 
+elementFormDefault="qualified"><!-- 指出任何在此SCHEMA中声明的元素必须被命名空间限定-->
+<xs:element name="employee" type="personinfo"/>
+<xs:element name="student" type="personinfo"/>
+<xs:element name="member" type="personinfo"/>
+
+<xs:complexType name="personinfo">
+  <xs:sequence>
+    <xs:element name="firstname" type="xs:string"/>
+    <xs:element name="lastname" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+</xs:schema>
